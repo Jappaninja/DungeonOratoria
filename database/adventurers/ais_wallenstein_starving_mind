@@ -1,0 +1,135 @@
+{
+	"id": "ais_wallenstein_starving_mind",
+	"title": "Starving Mind",
+	"name": "Ais Wallenstein",
+	"type": "physical_type",
+	"stars": 4,
+	"limited": true,
+	"stats": {
+		"hp": [1634, 1818, 2014, 2222, 2444, 2684],
+		"mp": [118, 130, 142, 154, 166, 178],
+		"physical_attack": [658, 762, 865, 969, 1176, 1486],
+		"magic_attack": [118, 188, 258, 328, 328, 328],
+		"defense": [188, 251, 315, 379, 443, 443],
+		"strength": [658, 762, 865, 969, 1176, 1486],
+		"endurance": [188, 251, 315, 379, 443, 443],
+		"dexterity": [205, 288, 370, 453, 535, 535],
+		"agility": [287, 370, 454, 537, 621, 788],
+		"magic": [118, 188, 258, 328, 328, 328]
+	},
+	"skills": {
+		"special": {
+			"id": "mortal_encounter",
+			"name": "Mortal Encounter",
+			"effects": [
+				{
+					"target": "foe",
+					"attribute": "damage",
+					"modifier": "ultra",
+					"type": "physical_attack"
+				}, {
+					"target": "foe",
+					"attribute": "dark",
+					"modifier": "temp_strength"
+				}
+			]
+		},
+		"combat": [
+			{
+				"id": "devour_magic",
+				"name": "Devour Magic",
+				"effects": [
+					{
+						"target": "foe",
+						"attribute": "damage",
+						"modifier": "-25%",
+						"duration": 4
+					}, {
+						"target": "foes",
+						"attribute": "stun_resist",
+						"modifier": "-75%"
+					}
+				]
+			}, {
+				"id": "skill2",
+				"name": "skill2",
+				"effects": [
+					{
+						"target": "foe",
+						"attribute": "damage",
+						"modifier": "high",
+						"type": "physical_attack"
+					}, {
+						"target": "foe",
+						"attribute": "stun",
+						"modifier": "30%"
+					}
+				]
+			}, {
+				"id": "skill3",
+				"name": "skill3",
+				"effects": [
+					{
+						"target": "foes",
+						"attribute": "damage",
+						"modifier": "high",
+						"type": "physical_attack"
+					}, {
+						"target": "foes",
+						"attribute": "stun",
+						"modifier": "15%"
+					}
+				]
+			}
+		],
+		"development": [
+			{
+				"name": "Crush: I",
+				"effects": [
+					{
+						"attribute": "Strength",
+						"modifier": "+15%"
+					}
+				]
+			}, {
+				"name": "Strike: I",
+				"effects": [
+					{
+						"attribute": "Critical",
+						"modifier": "+20%"
+          }
+				]
+			}, {
+				"name": "Light Resistance: I",
+				"effects": [
+					{
+						"attribute": "Light Resist",
+						"modifier": "+35%"
+            	}
+				]
+			}, {
+				"name": "Rigid: I",
+				"effects": [
+					{
+						"attribute": "Endurance",
+						"modifier": "+10%"
+            	},{
+            "attribute": "agility",
+						"modifier": "+10%"
+            },{
+            "attribute": "Dexterity",
+						"modifier": "+10%"
+            }
+				]
+			}, {
+				"name": "Status Resist: I",
+				"effects": [
+					{
+						"attribute": "Ailment Resist",
+						"modifier": "+15%"
+					}
+				]
+			}
+		]
+	}
+}
